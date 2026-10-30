@@ -22,7 +22,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await API.post("/register", formData);
+      const res = await API.post("/auth/register", formData);
 
       alert(res.data.message);
 

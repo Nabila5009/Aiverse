@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
-import axios from "axios";
+import api from "../services/api";
 
 function ProtectedRoute({ children }) {
   const [isValid, setIsValid] = useState(null);
@@ -15,7 +15,7 @@ function ProtectedRoute({ children }) {
 
     const verifyToken = async () => {
       try {
-        await axios.get("http://localhost:5001/api/profile", {
+        await api.get("/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
