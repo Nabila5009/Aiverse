@@ -12,7 +12,7 @@ This project is designed as a modern AI tool marketplace where users can:
 - Upload files and get AI-based insights
 - Manage a SaaS-style frontend experience with modular pages and routes
 
-## Tech Stack
+## Tech Stacks
 
 ### Frontend
 - React
